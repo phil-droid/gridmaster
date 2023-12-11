@@ -1,0 +1,56 @@
+body {
+    display: flex;
+    margin: 0; /* Remove default margin to ensure full-width display */
+}
+
+.left-dash {
+    width: 270px;
+    background-color: cyan;
+    height: 98vh;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: auto; /* Each column should be as wide as its content */
+    grid-gap: 5px; /* Add a gap between each grid item */
+}
+
+.left-dash > div {
+    display: flex;
+    align-items: center;
+}
+
+.left-dash .icon img {
+    width: 20px; /* Adjust the icon size as needed */
+    margin-right: 10px; /* Add spacing between icon and text */
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1; /* Allow the right section to take up remaining width */
+}
+
+.top-dash {
+    background-color: rgb(235, 235, 235);
+    height: 20vh;
+    max-width: 1200px;
+    margin: 5px;
+}
+
+.main-dash {
+    flex-grow: 1; /* Allow the main-dash to take up remaining height */
+    background-color: rgb(228, 228, 218);
+    margin: 5px;
+    border-radius: 10px;
+    display: grid;
+}
+
+.search {
+    position: relative;
+    padding-top: 2px;
+    padding-left: 400px;
+    border-radius: 90px;;
+}
+
+.grid1{
+    background-color: blue;
+}
